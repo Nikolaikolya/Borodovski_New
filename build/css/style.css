@@ -204,6 +204,10 @@ h6 {
   background-color: #000;
 }
 
+.nav__login {
+  position: relative;
+}
+
 .nav__inner {
   display: -webkit-box;
   display: flex;
@@ -227,6 +231,12 @@ h6 {
   color: #fff;
   padding: 25px 15px;
   text-decoration: none;
+}
+
+.nav__login-img {
+  position: absolute;
+  max-width: 14px;
+  left: -10px;
 }
 
 .header__content {
@@ -268,10 +278,17 @@ h6 {
   color: #000;
   padding: 55px 0;
   margin-bottom: 35px;
+  position: relative;
 }
 
 .main__inner:last-child {
   margin-bottom: 65px;
+}
+
+.main__decor {
+  max-width: 8px;
+  position: absolute;
+  left: 50%;
 }
 
 .main__news {
