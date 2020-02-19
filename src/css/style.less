@@ -1,0 +1,30 @@
+body {
+    color: @main_ct;
+    font-size: @fz;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.wrapper--bg {
+    background: #000 url(../img/main_bg.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+@import "./normalize";
+@import "./var.less";
+@import "./smart-grid.less";
+@import "./nav";
+@import "./header";
+
+
+
+@import "./adaptiv";
+
+
+.wrapper {
+    .wrapper();
+    box-sizing: content-box;
+}
