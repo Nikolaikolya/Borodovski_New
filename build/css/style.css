@@ -221,6 +221,12 @@ h6 {
   display: -webkit-box;
   display: flex;
   list-style-type: none;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.nav__list--pad {
+  margin-left: 20px;
 }
 
 .nav__item {
@@ -231,6 +237,10 @@ h6 {
   color: #fff;
   padding: 25px 15px;
   text-decoration: none;
+}
+
+.nav__link:first-child {
+  padding-left: 25px;
 }
 
 .nav__login-img {
@@ -289,6 +299,9 @@ h6 {
   max-width: 8px;
   position: absolute;
   left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .main__news {
@@ -344,6 +357,10 @@ h6 {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
+}
+
+.main--price {
+  background: url(../img/bg_item.jpg) center;
 }
 
 .btn {
@@ -457,9 +474,46 @@ h6 {
   max-width: 20px;
 }
 
+.shadow {
+  box-shadow: inset 0 10px 10px rgba(0,0,0);
+}
+
 .wpar {
   display: -webkit-box;
   display: flex;
+}
+
+.price__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #000;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: flex;
+}
+
+.breadcrumb__list {
+  list-style-image: url(../img/bread.png);
+  margin-left: 30px;
+  padding-left: 10px;
+}
+
+.breadcrumb__list:first-child {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.breadcrumb__link {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .col {
@@ -486,7 +540,7 @@ h6 {
   box-sizing: content-box;
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:939px) {
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;

@@ -1,6 +1,8 @@
 .nav {
     background-color: #000;
 
+    &__logo {
+    }
 
     &__login {
         position: relative;
@@ -15,6 +17,11 @@
     &__list {
         display: flex;
         list-style-type: none;
+        align-items: center;
+    }
+
+    &__list--pad {
+        margin-left: 20px;
     }
 
     &__item{
@@ -25,6 +32,10 @@
         color: #fff;
         padding: 25px 15px;
         text-decoration: none;
+    }
+
+    &__link:first-child {
+        padding-left: 25px;
     }
 
     &__login-img {
